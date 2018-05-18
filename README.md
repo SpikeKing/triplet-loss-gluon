@@ -16,7 +16,7 @@ Triplet Loss的对比：
 
 Triplet Loss的[公式](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference)：
 
-$$	\sum_{i}^n \Bigl[ \ \Vert \ f(x_i^a) - f(x_i^p) \ \Vert_2^2 - \Vert \ f(x_i^a) - f(x_i^n) \ \Vert_2^2 + \alpha \ \Bigl]_+ $$
+<img src="doc/tl_formular.png"  width=auto height="80">
 
 其他请参考Triplet Loss算法的[论文](https://arxiv.org/abs/1503.03832)。
 
@@ -261,11 +261,11 @@ Epoch: 9, Triplet Loss: 0.06260935
 
 Triplet Loss的核心功能就是将数据编码为具有可区分性的特征。使用[PCA](https://en.wikipedia.org/wiki/Principal_component_analysis)降维，将样本特征转换为可视化的二维分布，通过观察可知，样本特征具有一定的区分性。效果如下：
 
-![PCA-Triplet](doc/pca-t.png)
+<img src="doc/pca-t.png" width=auto height="400">
 
 而原始的数据分布，效果较差：
 
-![PCA-Origin](doc/pca-o.png)
+<img src="doc/pca-o.png" width=auto height="400">
 
 在训练结束时，执行可视化数据：
 
