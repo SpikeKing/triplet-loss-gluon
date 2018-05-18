@@ -22,6 +22,8 @@ Triplet Loss的[公式](https://math.meta.stackexchange.com/questions/5020/mathj
 
 本文使用``MXNet/Gluon``深度学习框架，数据集选用[MNIST](http://yann.lecun.com/exdb/mnist/)，实现Triplet Loss算法。
 
+本文的[源码](https://github.com/SpikeKing/triplet-loss-gluon)：https://github.com/SpikeKing/triplet-loss-gluon
+
 ---
 
 ## 数据集
